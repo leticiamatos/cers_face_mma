@@ -119,12 +119,13 @@ a:hover{
 body{
   font-family: @fontRegular;
   font-size: 15px;
-  background: url(../images/z_lixo/home.jpg) top center no-repeat;
+  //background: url(../images/z_lixo/step_03a.jpg) top center no-repeat;
   color: #fff;
 }
 .general{
-  .width_center;
+  background: url(../images/bg.jpg) top center;
   position: relative;
+  .width_center;
 }
 .like_pin{
   height: 23px;
@@ -137,7 +138,7 @@ body{
 
 // Step 01 - HOME
 .step_01{ 
-  background: url(../images/bg.jpg) top center;
+ 
   .logo{
     text-align: center;
     position: absolute;
@@ -238,5 +239,107 @@ body{
       cursor: pointer;
       padding: 5px 42px;
     }
+  }
+}
+
+// Step 02 - Confirmation
+.step_02{
+  text-align: center;
+
+  .logo{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width:100%;
+    display: block;
+  }
+  .block_01{
+    clear: both;
+    color: @cY;
+    line-height: 20px;
+    height: 180px;
+    padding-top: 250px;
+
+    .line_01{
+      font-size: 21px;
+    }
+    .line_02{
+      font-size: 24px;
+      margin: 20px 0 10px;
+      padding: 12px 0;
+      color: #000;
+      background: url(../images/bt_y.png) center center no-repeat;
+    }
+    .line_03{
+      font-size: 15px;
+      line-height: 24px;
+
+      span{
+        font-weight: bold;
+        font-size: 21px;
+      }
+    }
+  }
+  .block_02{
+    height: 350px;
+    padding-top: 5px;
+
+    .line_01{
+      color: @cGray2;
+      font-size: 15px;
+      line-height: 20px;
+    }
+    a{
+      display: block;
+    }
+    .face_link{
+      margin: 43px auto 0;
+      width: 365px;
+      background: url(../images/icon_face.png) left center no-repeat;
+      padding: 7px 0 7px 35px;
+      color: @cGray2;
+    }
+    .bt_new_courses{
+      width: 400px;
+      height: 40px;
+      line-height: 40px;
+      background: url(../images/bt_gray2.png) center center no-repeat;
+      font-size: 22px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      margin: 53px auto 0;
+      color: @cGray3;
+    }
+  }
+}
+
+// Step 03 - Results 
+.step_03{
+  width: 700px;
+  text-align: center;
+
+  .logo{
+    padding-top: 5px;
+  }
+  .block_01{
+    height: 220px;
+    font-size: 53px;
+    line-height: 67px;
+    margin-top: 14px;
+    color: @cGray;
+  }
+  .block_01.victory{
+    color: @cY;
+  }
+  .block_02{
+    height: 190px;
+    color: @cGray;
+    font-size: 27px;
+    line-height: 34px;
+  }
+  footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 }
