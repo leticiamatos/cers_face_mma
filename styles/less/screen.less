@@ -1,0 +1,242 @@
+/* ------------------------------------
+  CSS Desenvolvido pela
+  Pianolab | www.pianolab.com.br
+  Author: Letícia Matos | leticiamatos.com
+------------------------------------ */ 
+
+/* =============================================================================
+   Variables
+========================================================================== */
+
+  /* Colors */
+  @cK:#222;
+  @cKA:rgba(0,0,0,0.7);
+  @cRed:#B20000;  
+  @cRedMenu: rgba(178, 0, 0, 0.9);  
+  @cY:#FCC033; 
+  @cGray:#CCCCCC; 
+  @cGray2:#999999; 
+  @cGray3:#333333; 
+  
+  @cTest:rgba(0,255,0,0.5);  
+  @cTest2:rgba(255,0,0,0.3);  
+  
+  /* Measures */
+  @width:810px;
+  .width_center{
+    width: @width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Fonts */
+  @fontRegular: 'Montserrat', sans-serif;
+
+/* =============================================================================
+   General
+========================================================================== */
+.radius (@radius: 2px){
+  border-radius:@radius !important;
+  -moz-border-radius:@radius !important;
+  -webkit-border-radius:@radius !important;
+  -o-border-radius:@radius !important;
+  -ms-border-radius:@radius !important;
+}
+.shadow (@shadow: 3px 3px 2px rgba(0,0,0,0.3)){
+  box-shadow:@shadow !important;
+  -moz-box-shadow:@shadow !important;
+  -webkit-box-shadow:@shadow !important;
+  -o-box-shadow:@shadow !important;
+  -ms-box-shadow:@shadow !important;
+}
+.textShadow (@textShadow: 0px 1px 0px #000000){
+  text-shadow:@textShadow;
+  -moz-text-shadow:@textShadow;
+  -webkit-text-shadow:@textShadow;
+  -o-text-shadow:@textShadow;
+  -ms-text-shadow:@textShadow;
+}
+.transition (@transiton:0.8s){
+  transition:@transiton;
+  -moz-transition:@transiton;
+  -webkit-transition:@transiton;
+  -o-transition:@transiton;
+  -ms-transition:@transiton;
+}
+.rotation (@rotation:0.2s){
+  transform:rotate(valuedeg);
+  -moz-transform:rotate(valuedeg);
+  -webkit-transform:rotate(valuedeg);
+  -o-transform:rotate(valuedeg);
+  -ms-transform:rotate(valuedeg);
+}
+.noRadius (@radius: 0){
+  border-radius:@radius !important;
+  -moz-border-radius:@radius !important;
+  -webkit-border-radius:@radius !important;
+  -o-border-radius:@radius !important;
+  -ms-border-radius:@radius !important;
+}
+.noShadow (@shadow:none){
+  box-shadow:@shadow !important;
+  -moz-box-shadow:@shadow !important;
+  -webkit-box-shadow:@shadow !important;
+  -o-box-shadow:@shadow !important;
+  -ms-box-shadow:@shadow !important;
+}
+.noTextShadow (@textShadow: none){
+  text-shadow:@textShadow;
+  -moz-text-shadow:@textShadow;
+  -webkit-text-shadow:@textShadow;
+  -o-text-shadow:@textShadow;
+  -ms-text-shadow:@textShadow;
+}
+.noTransition (@transiton:none){
+  transition:@transiton;
+  -moz-transition:@transiton;
+  -webkit-transition:@transiton;
+  -o-transition:@transiton;
+  -ms-transition:@transiton;
+}
+.noOpacity{
+  opacity: 1 !important;
+}
+
+.clear{
+  display: block; 
+  clear: both;
+}
+a{ 
+  color: @cRed;
+  .transition;
+}
+a:hover{
+  text-decoration: none; 
+  opacity: 0.6;
+}
+
+/* Content */
+body{
+  font-family: @fontRegular;
+  font-size: 15px;
+  background: url(../images/z_lixo/home.jpg) top center no-repeat;
+  color: #fff;
+}
+.general{
+  .width_center;
+  position: relative;
+}
+.like_pin{
+  height: 23px;
+  background: url(../images/header_like.jpg) top center no-repeat;
+  font-size:10px;
+  text-align: right;
+  padding-right: 43px;
+  padding-top: 28px; 
+}
+
+// Step 01 - HOME
+.step_01{ 
+  background: url(../images/bg.jpg) top center;
+  .logo{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width:100%;
+    display: block;
+  }
+  .video{
+    clear: both;
+    background: url(../images/bg_02.gif);
+    height: 348px;
+    padding: 8px 0;
+    margin-top: 220px;
+    text-align: center;
+    iframe{
+      margin: 0 auto;
+    }
+  }
+  .block_02{
+    background: url(../images/icon_coins.png) 535px 23px no-repeat;
+    font-size: 15px;
+    height: 118px;
+    padding-right: 290px;
+    padding-top: 50px;
+    text-align: right;
+    color: @cY;
+    line-height: 24px;
+    span{
+      font-size: 21px;
+    }
+  }
+  .block_03{
+    background: url(../images/icon_or.png) top center no-repeat;
+    height: 250px;
+    position: relative;
+    .text_01,
+    .text_02,
+    .text_03{
+      position: absolute;
+      display: block;
+      color: #000;
+      text-align: center;
+    }
+    .text_01{
+      top: 0;
+      left: 130px;
+    }
+    .text_02{
+      font-size: 40px;
+      left: 373px;
+      top: 93px;
+    }
+    .text_03{
+      top: 0;
+      left: 429px;
+    }
+    .text_01,
+    .text_03{
+      width: 250px;
+      height: 250px;
+      line-height: 447px;
+      font-size: 23px;
+      font-weight: bold;
+      background-position: center 204px;
+      background-repeat: no-repeat;
+      background-image: none;
+      .noOpacity;
+    }
+    .text_01:hover,
+    .text_03:hover{
+      background-image: url(../images/bt_y.png);
+    }
+  }
+  .block_04{
+    padding: 28px 130px 0;
+    color: @cGray;
+    
+    h2{
+      font-size: 13px; 
+      font-weight: bold;
+    }
+    p{
+      font-size: 12px;
+      line-height: 18px;
+      padding-bottom: 7px;
+    }
+  }
+  .block_05{
+    height: 70px;
+    text-align: center;
+
+    input{
+      background:url(../images/bt_gray.png) center center no-repeat;
+      font-size: 26px;
+      text-transform: uppercase;
+      color: #000;
+      border:none;
+      cursor: pointer;
+      padding: 5px 42px;
+    }
+  }
+}
